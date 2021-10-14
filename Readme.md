@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+ # Личный проект «Седона»
 
 * Студент: [Елена Волошина](https://up.htmlacademy.ru/htmlcss/32/user/1426483).
-* Наставник: `Ольга Вадясова`(https://htmlacademy.ru/profile/ad0v0).
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
