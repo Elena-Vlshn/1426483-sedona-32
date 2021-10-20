@@ -13,7 +13,7 @@
   font-display: swap;
 }
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -24,6 +24,7 @@ body {
 .visually-hidden {
   visibility: hidden;
 }
+/* ====== HEADER ====== */
 .header {
   max-width: 1200px;
   background-color: #FFFFFF;
@@ -40,37 +41,36 @@ body {
   font-size: 20px;
   line-height: 26px;
 }
-.logo {
-  width: 138px;
-  height: 70px;
-}
-/* Как правильнее делать: задать размер блоку Logo или блоку main-nav__logo?
-  сейчас при любом варианте результат отображается.
+
 .main-nav__logo {
   width: 138px;
   height: 70px;
-} */
+}
 .user-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .user-nav__link {
-  color: white;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
 }
+.user-nav__button > .user-nav__link  {
+  color: #FFFFFF;
+}
 .user-nav__search {
-  background-image: url("../images/search.svg");
+  background-image: url("../images/svg/search.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
+
 .user-nav__like {
-  background-image: url("../images/heart.svg");
+  background-image: url("../images/svg/heart.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 18px;
@@ -82,24 +82,23 @@ body {
   background-color: #756257;
   text-align: center;
 }
+/* ====== MAIN ====== */
 .main-index {
   max-width: 1200px;
 }
 .main-index__banner{
   width: 1200px;
-  height: 485px;
-  background-image: url("../images/backgrounds/index-background.jpg");
+  background-image: url("../images/backgrounds/mountains.jpg");
   background-repeat: no-repeat;
   background-color:#333333;
 }
 .main-index__welcome {
   width: 458px;
-  height: 352px;
   margin-top: 51px;
   margin-bottom: 20px;
 }
 .main-index__divider {
-  background: url("../images/divider.svg") no-repeat 0 100%;
+  background: url("../images/svg/divider.svg") no-repeat 0 100%;
   width: 1200px;
   height: 57px;
 }
@@ -109,16 +108,16 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 .main-index__subtitle {
-  color: #000000;
+  font-weight: 400;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
 }
 .advantages__image {
   width: 800px;
-  height: 384px;
 }
 
 .advantages__separate {
@@ -164,24 +163,22 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
-/* .advices__text {
-  color: #333333;
-} */
+
 .advices__icon {
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
 }
 .advices__icon_house {
-  background-image: url("../images/housing.svg");
+  background-image: url("../images/svg/housing.svg");
 }
 .advices__icon_eat {
-  background-image: url("../images/eating.svg");
+  background-image: url("../images/svg/eating.svg");
 }
 .advices__icon_souvenirs {
-  background-image: url("../images/souvenirs.svg");
+  background-image: url("../images/svg/souvenirs.svg");
 }
 .advantages__list {
   display: flex;
@@ -190,11 +187,10 @@ body {
   padding: 0;
 }
 .advantages__item {
-  color: #000;
+  color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
-/* цвет наследуется от body ,
-оставлю в коде чтобы потом добавить стили для выравнивания */
+/* TODO добавить стили для выравнивания */
 /* .advantages__item  .advantage__number {
   color: #333333;
 }
@@ -204,12 +200,14 @@ body {
 .advantages__item:nth-child(2) {
   background-color: rgba(131, 179, 211, 0.2);
 }
+/* ====== ACTIVITY-BANNER ====== */
 .activity-banner__title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   text-align: center;
+  text-transform: uppercase;
 }
 .activity-banner__subtitle {
   font-size: 22px;
@@ -217,7 +215,8 @@ body {
   text-align: center;
 }
 .activity-banner__link {
-  color: white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 20px;
@@ -226,12 +225,22 @@ body {
   background-color: #756257;
   border-radius: 10px;
 }
+/* ====== SUBSCRIBE ====== */
 .subscribe {
   color: #FFFFFF;
   background-color: rgb(53, 53, 70);
-  background-image: url("../images/backgrounds/subscribe-background.jpg");
+  background-color: #FFFFFF;
   width: 1200px;
   height: 411px;
+}
+.subscribe_main {
+  background-image: url("../images/backgrounds/blurry-valley.jpg");
+}
+.subscribe_inner-title {
+  color: #000000;
+}
+.subscribe_inner-subtitle {
+  color: #333333;
 }
 .subscribe__title {
   font-size: 30px;
@@ -246,14 +255,16 @@ body {
   text-align: center;
 }
 .subscribe__button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #FFFFFF;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   background-color: #83B3D3;
+  text-transform: uppercase;
 }
+/* ====== FOOTER ====== */
 .footer {
   display: flex;
   max-width: 1200px;
@@ -266,33 +277,34 @@ body {
 
 }
 .social-link {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 18px;
   height: 15px;
   background-repeat: no-repeat;
 }
 .social-link_twitter {
-  background-image: url("../images/twitter.svg");
+  background-image: url("../images/svg/twitter.svg");
 }
 .social-link_facebook {
-  background-image: url("../images/facebook.svg");
+  background-image: url("../images/svg/facebook.svg");
 }
 .social-link_youtube {
-  background-image: url("../images/youtube.svg");
+  background-image: url("../images/svg/youtube.svg");
 }
 .footer__tel {
   text-decoration: none;
   font-size: 40px;
   line-height: 40px;
-  color: #000;
+  color: #000000;
 }
 .footer__logo {
-  background-image: url("../images/htmlacademy.svg");
+  background-image: url("../images/svg/htmlacademy.svg");
   background-repeat: no-repeat;
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 15px;
 
 }
+/* ====== CATALOG ====== */
 .main-inner {
   background-color: #FFFFFF;
   max-width: 1200px;
@@ -300,7 +312,7 @@ body {
 .catalog-inner {
   width: 1200px;
   height: 408px;
-  background-image: url("../images/backgrounds/catalog-background.jpg");
+  background-image: url("../images/backgrounds/blurry-mountains.jpg");
   background-color: rgb(53, 53, 70);
   color: #FFFFFF;
 }
@@ -318,7 +330,7 @@ body {
   text-decoration: none;
 }
 .breadcrumbs__link_home {
-  background-image: url("../images/home.svg");
+  background-image: url("../images/svg/home.svg");
   background-repeat: no-repeat;
 
 }
@@ -343,8 +355,8 @@ body {
   line-height: 23px;
 }
 .search__button-submit {
-  font-family: "PT Sans";
-  color: white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #FFFFFF;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -355,7 +367,7 @@ body {
   border: none;
 }
 .search__button-reset {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -378,24 +390,25 @@ body {
   margin: 0;
   padding: 0;
 }
-.filter__item {
-  background-color: white;
+/* .filter__item {
+  width: 48px;
+  height: 48px;
+} */
+
+.button {
   background-repeat: no-repeat;
   width: 48px;
   height: 48px;
-  border: 2px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
-.filter__item_card {
-  background-image: url("../images/sorting-card.svg")
+.button__card{
+  background-image: url("../images/svg/sorting-card.svg")
 }
-.filter__item_slideshow {
-  background-image: url("../images/sorting-slideshow.svg");
+.button__slideshow {
+  background-image: url("../images/svg/sorting-slideshow.svg");
 
 }
-.filter__item_list {
-  background-image: url("../images/sorting-list.svg");
+.button__list {
+  background-image: url("../images/svg/sorting-list.svg");
 }
 .catalog__list {
   list-style-type: none;
@@ -411,7 +424,7 @@ body {
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
 }
 .product__type {
   line-height: 23px;
@@ -421,21 +434,28 @@ body {
   line-height: 23px;
 }
 .product__button {
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
   width: 151px;
   height: 37px;
 }
 .product__button_description{
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
   background-color: #756257;
   text-decoration: none;
   color: #FFFFFF;
 }
 .product__button_like {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
   background-color: #83B3D3;
+
 }
 .product__rating {
   font-size: 16px;
@@ -444,7 +464,7 @@ body {
   height: 18px;
 }
 .catalog__button-add {
-  font-family: "PT Sans";  /* тег button не наследует  font-family от родителя? */
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
