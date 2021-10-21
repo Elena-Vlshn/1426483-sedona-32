@@ -9,44 +9,43 @@
 </head>
 
 <body>
+  <div class="wrapper">
   <header class="header">
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link_current" href="index.html">Главная</a>
+    <nav class="navigation">
+      <ul class="navigation__list reset-list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link_current" href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="about.html">О Седоне</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="about.html">О Седоне</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Гостиницы</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <a class="main-nav__logo" href="index.html"><img class="logo" src="images/svg/logo-sedona.svg"
+      <a class="navigation__logo" href="index.html"><img class="logo" src="images/svg/logo-sedona.svg"
           alt="логотип города Седона"/></a>
-    </nav>
-    <div class="user-nav">
-      <ul class="user-nav__list">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">
+
+      <ul class="navigation__list reset-list">
+        <li class="navigation__item navigation__item_search">
+          <a class="navigation__link" href="#">
             <span class="visually-hidden">Поиск</span>
-            <div class="user-nav__search"></div>
           </a>
         </li>
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">
+        <li class="navigation__item navigation__item_like">
+          <a class="navigation__link" href="#">
             <span class="visually-hidden">Лайк</span>
-            <div class="user-nav__like"></div>
-            <span>12</span>
           </a>
+          <span>12</span>
         </li>
-        <li class="user-nav__item user-nav__button">
-          <a class="user-nav__link" href="#">Хочу сюда!</a>
+        <li class="navigation__item navigation__item_button">
+          <a class="navigation__link" href="#">Хочу сюда!</a>
         </li>
       </ul>
-   </div>
+
+    </nav>
   </header>
-  <main class="main-index">
+  <main class="main-index main-container">
       <div class="main-index__banner">
         <img class="main-index__welcome" src="images/svg/welcome.svg"
         alt="welcome to the gorgeous Sedona becaus the grand canyon sucks">
@@ -75,7 +74,7 @@
 
       <div class="advices">
         <h2 class="visually-hidden">Советы</h2>
-        <ul class="advices__list">
+        <ul class="advices__list reset-list">
           <li class="advices__item">
             <div class="advices__icon advices__icon_house"></div>
             <h3 class="advices__title">Жильё</h3>
@@ -114,7 +113,7 @@
       </div>
 
 
-      <ul class="advantages__list">
+      <ul class="advantages__list reset-list">
         <li class="advantages__item">
           <section class="advantage">
             <h2 class="advantage__title">Небольшая площадь</h2>
@@ -160,7 +159,7 @@
       <p class="subscribe__subtitle">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
-      <form action="https://echo.htmlacademy.ru/" method="post">
+      <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <input class="subscribe__input" type="email" name="email" placeholder="Ваш e-mail" required />
           <button class="subscribe__button" type="submit">Подписаться</button>
@@ -171,19 +170,20 @@
 
   <footer class="footer">
     <section class="footer__social">
-      <h2 class="visually-hidden">Социальные сети</h2>
+      <h2 class="visually-hidden" hidden>Социальные сети</h2>
       <div class="social">
-        <ul class="social__list">
+        <ul class="social__list reset-list">
           <li class="social__icon">
-            <a class="social-link social-link_twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Twitter</span></a>
+            <a class="social-link social-link_twitter" href="https://twitter.com/htmlacademy">
+              <span class="visually-hidden">Twitter</span></a>
           </li>
           <li class="social__icon">
-            <a class="social-link social-link_facebook" href="https://www.facebook.com/htmlacademy_ru"><span
-                class="visually-hidden">Facebook</span></a>
+            <a class="social-link social-link_facebook" href="https://www.facebook.com/htmlacademy_ru">
+              <span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="social__icon">
-            <a class="social-link social-link_youtube" href="https://www.youtube.com/HTMLAcademyRUS"><span
-                class="visually-hidden">YouTube</span></a>
+            <a class="social-link social-link_youtube" href="https://www.youtube.com/HTMLAcademyRUS">
+              <span class="visually-hidden">YouTube</span></a>
           </li>
         </ul>
       </div>
@@ -192,11 +192,12 @@
       <h2 class="visually-hidden">Контактный номер телефона</h2>
       <a class="footer__tel" href="tel:88128121212">+7 (812) 812-12-12</a>
     </section>
-    <section>
+    <section class="footer__academy">
       <h2 class="visually-hidden">Сделано в</h2>
       <a class="footer__logo" href="https://htmlacademy.ru"><span class="visually-hidden">.html academy</span></a>
     </section>
   </footer>
+</div>
 </body>
 
 </html>
