@@ -108,14 +108,16 @@
                 </fieldset>
                 <fieldset class="search__param search__param_price">
                     <legend class="search__legend">Стоимость, ₽:</legend>
-                    <label for="min">от</label>
-                    <input  class="search__input" type="text" name="min" placeholder="0" id="min">
-                    <label for="max">до</label>
-                    <input class="search__input" type="text" name="max" placeholder="9000" id="max">
-                  <div>
-                    <button class="search__slider" type="button"><span class="visually-hidden">Минимальная стоимость</span></button>
-                    <button class="search__slider" type="button"><span class="visually-hidden">Максимальная стоимость</span></button>
-                  </div>
+                    <div  class="price-wrapper">
+                        <!-- <label for="min">от</label> -->
+                        <input  class="search__input" type="text" name="min" placeholder="0" id="min">
+                        <!-- <label for="max">до</label> -->
+                        <input class="search__input" type="text" name="max" placeholder="9000" id="max">
+                      <div>
+                        <button class="search__slider" type="button"><span class="visually-hidden">Минимальная стоимость</span></button>
+                        <button class="search__slider" type="button"><span class="visually-hidden">Максимальная стоимость</span></button>
+                      </div>
+                    </div>
                 </fieldset>
                 <div class="search__button-container">
                   <button class="search__button-submit" type="submit">Применить</button>
@@ -142,17 +144,17 @@
               <span class="visually-hidden" hidden>Отображать результ в виде:</span>
               <ul class="filter__list reset-list">
                 <li class="filter__item">
-                  <a class="button button_card" href="#">
+                  <a class="filter__button filter__button_card" href="#">
                     <span class="visually-hidden">Показать карточки</span>
                   </a>
                 </li>
                 <li class="filter__item">
-                  <a class="button button_slideshow" href="#">
+                  <a class="filter__button filter__button_slideshow" href="#">
                     <span class="visually-hidden">Показать слайдшоу</span>
                   </a>
                 </li>
-                <li class="filter__item">
-                  <a class="button button_list" href="#">
+                <li class="filter__item filter__item_currently">
+                  <a class="filter__button filter__button_list" href="#">
                     <span class="visually-hidden">Показать список</span>
                   </a>
                 </li>
@@ -168,7 +170,9 @@
               <ul class="catalog__list reset-list">
                 <li class="catalog__item">
                   <article class="product">
-                      <img class="product__img" src="images/hotel-amara.jpg" alt="Гостиница">
+                      <div class="img-wrapper">
+                       <img class="product__img" src="images/hotel-amara.jpg" alt="Гостиница">
+                      </div>
                       <div class="product__info">
                         <h3 class="product__name reset-text">Amara Resort & Spa</h3>
                         <p class="product__type reset-text">Гостиница</p>
@@ -178,56 +182,62 @@
                       </div>
                       <div class="product__quality">
                         <div class="product__stars product__stars_four"></div>
-                        <div class="product__rating">Рейтинг: 8,5</div>
+                        <div class="product__rating product__button">Рейтинг: 8,5</div>
                       </div>
                   </article>
                 </li>
 
                 <li class="catalog__item">
                   <article class="product">
+                    <div class="img-wrapper">
                       <img class="product__img" src="images/hotel-desert.jpg" alt="Мотель">
+                    </div>
                       <div class="product__info">
                         <h3 class="product__name reset-text">Desert Quail Inn</h3>
                         <p class="product__type reset-text">Мотель</p>
                         <p class="product__price reset-text">От 3000 ₽</p>
-                        <a class="product__description product__button_description" href="#">подробнее</a>
+                        <a class="product__button product__button_description" href="#">подробнее</a>
                         <button class="product__button product__button_like" type="button">В избранное</button>
                       </div>
                       <div class="product__quality">
                         <div class="product__stars"></div>
-                        <div class="product__rating">Рейтинг: 8,9</div>
+                        <div class="product__rating product__button">Рейтинг: 8,9</div>
                       </div>
                   </article>
                 </li>
                 <li class="catalog__item">
                   <article class="product">
+                    <div class="img-wrapper">
                       <img class="product__img" src="images/hotel-villas.jpg" alt="Апартаменты">
+                    </div>
                       <div class="product__info">
                         <h3 class="product__name reset-text">Villas at Poco Diablo</h3>
                         <p class="product__type reset-text">Апартаменты</p>
                         <p class="product__price reset-text">От 2000 ₽</p>
-                        <a class="product__description product__button_description" href="#">подробнее</a>
+                        <a class="product__button product__button_description" href="#">подробнее</a>
                         <button class="product__button product__button_like" type="button">В избранное</button>
                       </div>
                       <div class="product__quality">
                         <div class="product__stars"></div>
-                        <div class="product__rating">Рейтинг: 9,2</div>
+                        <div class="product__rating product__button">Рейтинг: 9,2</div>
                       </div>
                   </article>
                 </li>
                 <li class="catalog__item">
                   <article class="product">
+                    <div class="img-wrapper">
                       <img class="product__img" src="images/hotel-greentree.jpg"  alt="Гостиница">
+                    </div>
                       <div class="product__info">
                         <h3 class="product__name reset-text">GreenTree Inn</h3>
                         <p class="product__type reset-text">Гостиница</p>
                         <p class="product__price reset-text">От 3000 ₽</p>
-                        <a class="product__description product__button_description" href="#">подробнее</a>
+                        <a class="product__button product__button_description" href="#">подробнее</a>
                         <button class="product__button product__button_like" type="button">В избранное</button>
                       </div>
                       <div class="product__quality">
                         <div class="product__stars"></div>
-                        <div class="product__rating">Рейтинг: 9,2</div>
+                        <div class="product__rating product__button">Рейтинг: 9,2</div>
                       </div>
                   </article>
                 </li>
@@ -285,33 +295,35 @@
       </main>
 
       <footer class="footer wrapper">
-        <section class="footer__social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <div class="social">
-            <ul class="social__list reset-list">
-              <li class="social__icon">
-                <a class="social-link social-link_twitter" href="https://twitter.com/htmlacademy">
-                  <span class="visually-hidden">Twitter</span></a>
-              </li>
-              <li class="social__icon">
-                <a class="social-link social-link_facebook" href="https://www.facebook.com/htmlacademy_ru">
-                  <span class="visually-hidden">Facebook</span></a>
-              </li>
-              <li class="social__icon">
-                <a class="social-link social-link_youtube" href="https://www.youtube.com/HTMLAcademyRUS">
-                  <span class="visually-hidden">YouTube</span></a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="footer__contact">
-          <h2 class="visually-hidden">Контактный номер телефона</h2>
-          <a class="footer__tel" href="tel:88128121212">+7 (812) 812-12-12</a>
-        </section>
-        <section class="footer__academy">
+        <!-- <div class="wrapper"> -->
+          <section class="footer__social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <div class="social">
+              <ul class="social__list reset-list">
+                <li class="social__icon">
+                  <a class="social-link social-link_twitter" href="https://twitter.com/htmlacademy">
+                    <span class="visually-hidden">Twitter</span></a>
+                </li>
+                <li class="social__icon">
+                  <a class="social-link social-link_facebook" href="https://www.facebook.com/htmlacademy_ru">
+                    <span class="visually-hidden">Facebook</span></a>
+                </li>
+                <li class="social__icon">
+                  <a class="social-link social-link_youtube" href="https://www.youtube.com/HTMLAcademyRUS">
+                    <span class="visually-hidden">YouTube</span></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer__contact">
+            <h2 class="visually-hidden">Контактный номер телефона</h2>
+            <a class="footer__tel" href="tel:88128121212">+7 (812) 812-12-12</a>
+          </section>
+          <section class="footer__academy">
           <h2 class="visually-hidden">Сделано в</h2>
           <a class="footer__logo" href="https://htmlacademy.ru"><span class="visually-hidden">.html academy</span></a>
-        </section>
+          </section>
+        <!-- </div> -->
       </footer>
     </div>
   </body>
