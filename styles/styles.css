@@ -130,7 +130,7 @@ a {
 /* ====== HEADER ====== */
 .header {
   display: flex;
-  padding: 14px 72px 18px 61px;
+  padding: 14px 72px 14px 61px;
 
 }
 .navigation {
@@ -156,7 +156,7 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  padding: 3px 9px;
+  padding: 3px 9px 2px;
   border: 3px solid transparent;
 }
 .navigation__link_current::after {
@@ -172,7 +172,7 @@ a {
   position: relative;
   display: block;
   min-width: 38px;
-  min-height: 38px;
+  min-height: 37px;
   border: 3px solid transparent;
 }
 .navigation__link:hover {
@@ -764,7 +764,6 @@ a[href^="tel:"]:active {
 }
 .range__input:active + .range__label {
   background: #756257;
-
 }
 .range__wrapper-group_max {
   border-radius: 0 4px 4px 0;
@@ -1344,7 +1343,7 @@ a[href^="tel:"]:active {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
-  display: none;
+  /* display: none; */
 }
 .modal__open {
   display: block;
@@ -1409,41 +1408,38 @@ a[href^="tel:"]:active {
   margin-bottom: 40px;
 }
 
-.modal__input-date {
-  grid-column: 2/-1;
-  border-radius: 4px;
-  position: relative;
-}
 .modal__input-counter::-webkit-outer-spin-button,
 .modal__input-counter::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
-
-.modal__input-date::-webkit-calendar-picker-indicator {
+.modal__date-wrap {
+  position: relative;
+  grid-column: 2/-1;
+}
+.modal__calendar {
+  width: 15px;
+  height: 15px;
   background-image: url("/images/svg/date.svg");
   background-repeat: no-repeat;
   background-position: 100% center;
-  background-size: 20px;
   cursor: pointer;
-}
-/* .modal__input_date:not(:active)::-webkit-datetime-edit {
-  opacity: 0;
-} */
-.modal__input-date::-webkit-datetime-edit {
-  opacity: 0;
-}
-.modal__input-date:before {
-  content: "Укажите дату";
+  border: none;
+  align-self:flex-end;
   position: absolute;
-  top: 10px;
-  left: 19px;
+  top: 18px;
+  right: 25px;
 }
-.modal__input-date:active:before  {
-  content: "27 апреля 2020";
-  position: absolute;
-  top: 10px;
-  left: 19px;
+.modal__input-date {
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.modal__input-date:active::placeholder {
+  color: transparent;
 }
 .modal__comment {
   line-height: 29px;
