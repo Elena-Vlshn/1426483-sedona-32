@@ -219,13 +219,13 @@ a {
 .navigation__button {
   border: 3px solid #756257;
 }
-.navigation__item_button:hover a {
+.navigation__button:hover {
   background: #615048;
 }
-.navigation__item_button:focus a {
+.navigation__button:focus {
   border: 3px solid #83B3D3;
 }
-.navigation__item_button:active a {
+.navigation__button:active {
   color: rgba(225, 225, 225, 0.3);
 }
 .navigation__like {
@@ -680,7 +680,7 @@ a[href^="tel:"]:active {
 .breadcrumbs__item::after {
   position: absolute;
   content: "";
-  background-image: url("/images/svg/arrow-right.svg");
+  background-image: url("../images/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   /* opacity: 0.3; */
@@ -875,7 +875,7 @@ a[href^="tel:"]:active {
 
 .control__input[type="checkbox"]:checked + .control__mark::before {
   content: "";
-  background-image: url("/images/svg/tick.svg");
+  background-image: url("../images/svg/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -968,7 +968,7 @@ a[href^="tel:"]:active {
   background-color: #FFFFFF;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  background-image: url("/images/svg/arrow.svg");
+  background-image: url("../images/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 12px;
@@ -1151,7 +1151,7 @@ a[href^="tel:"]:active {
   display: flex;
   align-self: center;
   height: 18px;
-  background: url("/images/svg/star.svg");
+  background: url("../images/svg/star.svg");
   background-size: 18px;
   background-repeat: space;
 }
@@ -1232,14 +1232,12 @@ a[href^="tel:"]:active {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border: 1px solid #E6E6E6;
   border-radius: 20px;
-  display: none;
+  visibility: hidden;
 }
-.popup__open {
-  display: blok;
-}
+
 .popup::before {
   content: "";
-  background-image: url("/images/svg/popup-top.svg");
+  background-image: url("../images/svg/popup-top.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -1248,12 +1246,17 @@ a[href^="tel:"]:active {
   width: 20px;
   height: 9px;
 }
-
 .selected {
   width: 400px;
   height: 230px;
   border-bottom: none;
 }
+.navigation__icon_selected:focus + .selected ,
+.navigation__item:hover .selected ,
+.selected:focus-within {
+  visibility: visible;
+}
+
 .selected__list {
   padding: 15px;
 }
@@ -1297,7 +1300,7 @@ a[href^="tel:"]:active {
 .popup__button-delete {
   width: 36px;
   height: 36px;
-  background-image: url("/images/svg/delete.svg");
+  background-image: url("../images/svg/delete.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
@@ -1343,7 +1346,7 @@ a[href^="tel:"]:active {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
-  /* display: none; */
+  display: none;
 }
 .modal__open {
   display: block;
@@ -1377,7 +1380,7 @@ a[href^="tel:"]:active {
   background-color: #F2F2F2;
   border-radius: 50%;
   border: 3px solid transparent;
-  background-image: url("/images/svg/close.svg");
+  background-image: url("../images/svg/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px;
@@ -1420,7 +1423,7 @@ a[href^="tel:"]:active {
 .modal__calendar {
   width: 15px;
   height: 15px;
-  background-image: url("/images/svg/date.svg");
+  background-image: url("../images/svg/date.svg");
   background-repeat: no-repeat;
   background-position: 100% center;
   cursor: pointer;
@@ -1463,10 +1466,10 @@ a[href^="tel:"]:active {
   position: relative;
   margin-left: 56px;
   padding-right: 20px;
+  display: flex;
+  align-items: center;
 }
-.modal__lebel_children::before:active {
-  background-color: #68A2CA;
-}
+
 .modal__info {
   width: 25px;
   height: 25px;
@@ -1474,6 +1477,8 @@ a[href^="tel:"]:active {
   border: none;
   background-color: #83B3D3;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
   margin-left: 12px;
 }
 .info__popup {
@@ -1486,11 +1491,16 @@ a[href^="tel:"]:active {
   position: absolute;
   top: 50px;
   right: -94px;
-
+}
+.modal__info:hover .info__popup {
+  visibility: visible;
+}
+.modal__info:hover {
+  background-color: #68A2CA;
 }
 .info__popup::before {
   content: "";
-  background-image: url("/images/svg/popup-top-dark.svg");
+  background-image: url("../images/svg/popup-top-dark.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -1505,17 +1515,12 @@ a[href^="tel:"]:active {
  line-height: 20px;
  font-family: "PT Sans", "Arial", sans-serif;
 }
-.modal__lebel_children {
-  display: flex;
-  align-items: center;
-}
+
 .modal__info-svg {
   width: 1px;
   height: 9px;
 }
-.modal__info:active {
-  background-color: #68A2CA;
-}
+
 .counter {
   display: flex;
   justify-content: space-between;
@@ -1535,12 +1540,12 @@ a[href^="tel:"]:active {
   border-radius: 4px;
 }
 .counter__change_minus {
-  background-image: url("/images/svg/minus.svg");
+  background-image: url("../images/svg/minus.svg");
   height: 1px;
   width: 13px;
 }
 .counter__change_plus {
-  background-image: url("/images/svg/plus.svg");
+  background-image: url("../images/svg/plus.svg");
   width: 13px;
   height: 13px;
 }
