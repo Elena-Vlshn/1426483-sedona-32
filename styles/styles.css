@@ -1251,12 +1251,12 @@ a[href^="tel:"]:active {
   height: 230px;
   border-bottom: none;
 }
+.navigation__icon_selected:hover + .selected,
 .navigation__icon_selected:focus + .selected ,
-.navigation__item:hover .selected ,
+.navigation__item:focus-within .selected,
 .selected:focus-within {
   visibility: visible;
 }
-
 .selected__list {
   padding: 15px;
 }
