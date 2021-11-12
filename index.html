@@ -43,9 +43,9 @@
                 <ul class="selected__list reset-list">
                   <li class="selected__item">
                     <a class="focus-group"  href="#">
-                      <img src="/images/hotel-desert-small.jpg" width="48" height="48" class="selected__img" alt="фото отеля">
+                      <img src="images/hotel-desert-small.jpg" width="48" height="48" class="selected__img" alt="фото отеля">
                       <div >
-                        <h2 class="selected__name reset-text">Desert Quail Inn</h2>
+                        <p class="selected__name reset-text">Desert Quail Inn</p>
                         <p class="selected__type reset-text">Мотель</p>
                       </div>
                     </a>
@@ -55,9 +55,9 @@
                   </li>
                   <li class="selected__item">
                     <a class="focus-group" href="#">
-                      <img src="/images/hotel-villas-small.jpg" width="48" height="48" class="selected__img" alt="фото отеля">
+                      <img src="images/hotel-villas-small.jpg" width="48" height="48" class="selected__img" alt="фото отеля">
                       <div class="selected__wrapper">
-                        <h2 class="selected__name reset-text">Villas at Poco Diablo</h2>
+                        <p class="selected__name reset-text">Villas at Poco Diablo</p>
                         <p class="selected__type reset-text">Апартаменты</p>
                       </div>
                     </a>
@@ -76,21 +76,20 @@
         </nav>
       </header>
       <main class="main">
-          <div class="main__banner">
-            <img class="main__welcome" src="images/svg/welcome.svg" width="458" height="352"
+        <div class="main__banner">
+          <img class="main__welcome" src="images/svg/welcome.svg" width="458" height="352"
             alt="welcome to the gorgeous Sedona becaus the grand canyon sucks">
-            <div class="main__divider"></div>
-          </div>
-          <h1 class="main__title reset-text">
+          <div class="main__divider"></div>
+        </div>
+        <h1 class="main__title reset-text">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </h1>
-          <p class="main__subtitle reset-text">
+        </h1>
+        <p class="main__subtitle reset-text">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-          </p>
+        </p>
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-
           <div class="advantages__separate">
             <section class="advantage">
               <h2 class="advantage__title reset-text">Настоящий городок</h2>
@@ -126,8 +125,6 @@
               </li>
             </ul>
           </div>
-
-
           <div class="advantages__separate">
             <img class="advantages__image" src="images/photo-2.jpg" width="800" height="384" alt="виды города Седона" />
             <section class="advantage">
@@ -138,8 +135,6 @@
               </p>
             </section>
           </div>
-
-
           <ul class="advantages__list reset-list">
             <li class="advantages__item">
               <section class="advantage">
@@ -187,10 +182,9 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-
-              <input class="subscribe__input field" type="email" name="email" placeholder="Ваш e-mail" required />
-              <button class="subscribe__button" type="submit"><span>Подписаться</span></button>
-
+            <label class="visually-hidden" for="subscribe">email</label>
+            <input class="subscribe__input field" type="email" name="email" id="subscribe" placeholder="Ваш e-mail" required/>
+            <button class="subscribe__button" type="submit"><span>Подписаться</span></button>
           </form>
         </section>
       </main>
@@ -230,7 +224,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal">
+    <div class="modal modal__close">
       <div class="modal__window modal__window_search">
         <section class="modal__content">
           <div class="modal__header">
@@ -240,26 +234,26 @@
             </button>
           </div>
           <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal__lebel" for="date-in">Дата заезда:</label>
+            <label class="modal__label" for="date-in">Дата заезда:</label>
             <div class="modal__date-wrap">
               <input class="modal__input-date field" type="text" id="date-in" name="date-in"  placeholder="Укажите дату" required>
               <button class="modal__calendar" type="button"><span class="visually-hidden">Открыть календарь</span></button>
             </div>
             <p class="modal__comment modal__comment_date-in reset-text">Мы не можем отправить вас в прошлое.</p>
-            <label class="modal__lebel" for="date-out">Дата выезда:</label>
+            <label class="modal__label" for="date-out">Дата выезда:</label>
             <div class="modal__date-wrap">
               <input class="modal__input-date field" type="text" id="date-out" name="date-out"  placeholder="Укажите дату" required>
               <button class="modal__calendar" type="button"><span class="visually-hidden">Открыть календарь</span></button>
             </div>
             <p class="modal__comment reset-text">На эти даты есть свободные номера. Пока есть.</p>
-            <label class="modal__lebel" for="adults">Взрослые:</label>
+            <label class="modal__label" for="adults">Взрослые:</label>
             <div class="counter">
-                <button class="counter__change counter__change_minus button" type="button"><span class="visually-hidden">уменьшить значение</span></button>
-                <input class="counter__input" type="number" id="adults" name="adults" value="2" required>
-                <button class="counter__change counter__change_plus button" type="button"><span class="visually-hidden">увеличить значение</span></button>
+              <button class="counter__change counter__change_minus button" type="button"><span class="visually-hidden">уменьшить значение</span></button>
+              <input class="counter__input" type="number" id="adults" name="adults" value="2" required>
+              <button class="counter__change counter__change_plus button" type="button"><span class="visually-hidden">увеличить значение</span></button>
             </div>
-            <span class="modal__lebel-wrap">
-            <label class="modal__lebel modal__lebel_children" for="children">Дети:</label>
+            <span class="modal__label-wrap">
+            <label class="modal__label modal__label_children" for="children">Дети:</label>
               <button class="modal__info" type="button">
                 <svg width="1" height="9" viewBox="0 0 1 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff">
                   <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
@@ -276,8 +270,8 @@
               <input class="counter__input" type="number" id="children" name="children"  value="1" required>
               <button class="counter__change counter__change_plus button" type="button"><span class="visually-hidden">увеличить значение</span></button>
             </div>
+            <button class="modal__button subscribe__button button" type="submit">Найти</button>
           </form>
-          <button class="modal__button subscribe__button button" type="submit">Найти</button>
         </section>
       </div>
     </div>

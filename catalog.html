@@ -84,7 +84,7 @@
                   <a class="breadcrumbs__link breadcrumbs__link_home" href="index.html"><span class="visually-hidden">Главная</span></a>
                 </li>
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link">Гостиницы</a>
+                  <a class="breadcrumbs__link" href="catalog.html">Гостиницы</a>
                 </li>
               </ul>
             </div>
@@ -120,30 +120,30 @@
                 </fieldset>
 
                 <fieldset class="fieldset-reset">
-                    <legend class="search__legend">Тип жилья:</legend>
-                    <ul class="search__list reset-list">
-                      <li class="search__item">
-                        <label class="control">
-                          <input class="control__input visually-hidden" type="radio" name="type" value="hotel" checked>
-                          <span class="control__mark"></span>
-                          <span class="control__lebel">Гостиница</span>
-                        </label>
-                      </li>
-                      <li class="search__item">
-                        <label class="control">
-                          <input class="control__input visually-hidden" type="radio" name="type" value="motel">
-                          <span class="control__mark"></span>
-                          <span class="control__lebel">Мотель</span>
-                        </label>
-                      </li>
-                      <li class="search__item">
-                        <label class="control">
-                          <input class="control__input visually-hidden" type="radio" name="type" value="apartments">
-                          <span class="control__mark"></span>
-                          <span class="control__lebel">Апартаменты</span>
-                        </label>
-                      </li>
-                    </ul>
+                  <legend class="search__legend">Тип жилья:</legend>
+                  <ul class="search__list reset-list">
+                    <li class="search__item">
+                      <label class="control">
+                        <input class="control__input visually-hidden" type="radio" name="type" value="hotel" checked>
+                        <span class="control__mark"></span>
+                        <span class="control__lebel">Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="search__item">
+                      <label class="control">
+                        <input class="control__input visually-hidden" type="radio" name="type" value="motel">
+                        <span class="control__mark"></span>
+                        <span class="control__lebel">Мотель</span>
+                      </label>
+                    </li>
+                    <li class="search__item">
+                      <label class="control">
+                        <input class="control__input visually-hidden" type="radio" name="type" value="apartments">
+                        <span class="control__mark"></span>
+                        <span class="control__lebel">Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
                 </fieldset>
                 <fieldset class="fieldset-reset fieldset-price">
                     <legend class="search__legend">Стоимость, ₽:</legend>
@@ -213,30 +213,27 @@
                 </li>
               </ul>
             </div>
-
           </section>
 
-
           <section class="catalog">
-
             <h2 class="visually-hidden">Результаты поиска</h2>
               <ul class="catalog__list reset-list">
                 <li class="catalog__item">
                   <article class="product">
-                      <a class="img-wrapper" href="#">
-                       <img class="product__img" width="180" height="120" src="images/hotel-amara.jpg" alt="Гостиница">
-                      </a>
-                      <div class="product__info">
-                        <a class="product__link" href="#"><h3 class="product__name reset-text">Amara Resort & Spa</h3></a>
-                        <p class="product__type reset-text">Гостиница</p>
-                        <p class="product__price reset-text">От 4000 ₽</p>
-                        <a class="product__button button product__button_description" href="#">подробнее</a>
-                        <button class="product__button button product__button_like" type="button">В избранное</button>
-                      </div>
-                      <div class="product__quality">
-                        <div class="product__stars product__stars_four"><span class="visually-hidden">четыре звезды</span></div>
-                        <div class="product__rating button">Рейтинг: 8,5</div>
-                      </div>
+                    <a class="img-wrapper" href="#">
+                      <img class="product__img" width="180" height="120" src="images/hotel-amara.jpg" alt="Гостиница">
+                    </a>
+                    <div class="product__info">
+                      <a class="product__link" href="#"><h3 class="product__name reset-text">Amara Resort & Spa</h3></a>
+                      <p class="product__type reset-text">Гостиница</p>
+                      <p class="product__price reset-text">От 4000 ₽</p>
+                      <a class="product__button button product__button_description" href="#">подробнее</a>
+                      <button class="product__button button product__button_like" type="button">В избранное</button>
+                    </div>
+                    <div class="product__quality">
+                      <div class="product__stars product__stars_four"><span class="visually-hidden">четыре звезды</span></div>
+                      <div class="product__rating button">Рейтинг: 8,5</div>
+                    </div>
                   </article>
                 </li>
 
@@ -340,6 +337,7 @@
             <h2 class="subscribe__title subscribe__title_inner reset-text">Подпишитесь на рассылку</h2>
             <p class="subscribe__subtitle subscribe__subtitle_inner reset-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="subscribe">email</label>
               <input class="subscribe__input field" type="email" name="email" placeholder="Ваш e-mail" required>
               <button class="subscribe__button" type="submit">Подписаться</button>
             </form>
