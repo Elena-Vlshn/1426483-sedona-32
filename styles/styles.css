@@ -236,8 +236,8 @@ img {
 }
 .navigation__like {
   position: absolute;
-  top: -4px;
-  right: -7px;
+  top: -3px;
+  right: -6px;
   width: 19px;
   height: 19px;
   background-color: #7db54f;
