@@ -66,7 +66,9 @@ body {
 .link {
   text-decoration: none;
   display: block;
-  font-family: "PT Sans", "Arial", sans-serif;
+  /* a наследует шрифт от родителя
+  button - не наследует */
+  /* font-family: "PT Sans", "Arial", sans-serif; */
 }
 /* Remove outline on the forms and links */
 :active, :hover, :focus {
@@ -501,6 +503,7 @@ img {
   border-radius: 0px 10px 10px 0px;
   padding: 14px;
   cursor: pointer;
+  margin: 0;
 }
 .subscribe__button:hover {
   background-color: #68a2ca;
@@ -520,6 +523,7 @@ img {
 }
 .subscribe__input {
   width: 600px;
+  margin: 0;
 }
 
 /* Invalid */
@@ -792,7 +796,7 @@ a[href^="tel:"]:active {
 }
 .range__input::-webkit-outer-spin-button,
 .range__input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
 }
 .range__input {
@@ -998,8 +1002,9 @@ a[href^="tel:"]:active {
   background-image: url("../images/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
-  appearance: none;
+  -webkit-appearance: none;
   padding: 12px 18px;
+  margin: 0;
 }
 .filter__sorting:hover {
   border-color:  #83b3d3;
