@@ -23,7 +23,7 @@
             </li>
           </ul>
           <a class="navigation__logo" href="index.html"><img src="images/svg/logo-sedona.svg" width="138" height="70"
-              alt="логотип города Седона"/></a>
+              alt="Логотип города Седона."/></a>
 
           <ul class="navigation__list navigation__user reset-list">
             <li class="navigation__item ">
@@ -43,7 +43,7 @@
                 <ul class="selected__list reset-list">
                   <li class="selected__item">
                     <a class="focus-group link"  href="#">
-                      <img src="images/hotel-desert-small.jpg" width="48" height="48" class="selected__img" alt="фото отеля">
+                      <img src="images/hotel-desert-small.jpg" width="48" height="48" class="selected__img" alt="Фото отеля.">
                       <div >
                         <p class="selected__name reset-text">Desert Quail Inn</p>
                         <p class="selected__type reset-text">Мотель</p>
@@ -55,7 +55,7 @@
                   </li>
                   <li class="selected__item">
                     <a class="focus-group link" href="#">
-                      <img src="images/hotel-villas-small.jpg" width="48" height="48" class="selected__img" alt="фото отеля">
+                      <img src="images/hotel-villas-small.jpg" width="48" height="48" class="selected__img" alt="Фото отеля.">
                       <div class="selected__wrapper">
                         <p class="selected__name reset-text">Villas at Poco Diablo</p>
                         <p class="selected__type reset-text">Апартаменты</p>
@@ -66,7 +66,7 @@
                     </button>
                   </li>
                 </ul>
-                <button type="button" class="popup__button-submit button">Все избранные</button>
+                <a class="popup__button-submit button" href="#">Все избранные</a>
             </div>
             </li>
             <li class="navigation__item navigation__item_button">
@@ -78,7 +78,7 @@
       <main class="main">
         <div class="main__banner">
           <img class="main__welcome" src="images/svg/welcome.svg" width="458" height="352"
-            alt="welcome to the gorgeous Sedona becaus the grand canyon sucks">
+            alt="welcome to the gorgeous Sedona becaus the grand canyon sucks.">
           <div class="main__divider"></div>
         </div>
         <h1 class="main__title reset-text">
@@ -98,10 +98,9 @@
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </section>
-            <img class="advantages__image" src="images/photo-1.jpg" width="800" height="384" alt="виды города Седона" />
+            <img class="advantages__image" src="images/photo-1.jpg" width="800" height="384" alt="Виды города Седона."/>
           </div>
-
-          <div class="advices">
+          <section class="advices">
             <h2 class="visually-hidden">Советы</h2>
             <ul class="advices__list reset-list">
               <li class="advices__item advices__item_house">
@@ -124,9 +123,9 @@
                 </p>
               </li>
             </ul>
-          </div>
+          </section>
           <div class="advantages__separate">
-            <img class="advantages__image" src="images/photo-2.jpg" width="800" height="384" alt="виды города Седона" />
+            <img class="advantages__image" src="images/photo-2.jpg" width="800" height="384" alt="Виды города Седона."/>
             <section class="advantage">
               <h2 class="advantage__title reset-text">Там есть<br> мост дьявола</h2>
               <p class="advantage__number reset-text">&#x2012; №2 &#x2012;</p>
@@ -164,9 +163,7 @@
               </section>
             </li>
           </ul>
-
         </section>
-
         <section class="activity-banner">
           <h2 class="activity-banner__title reset-text"><strong>Заинтересовались?</strong></h2>
           <p class="activity-banner__subtitle reset-text">
@@ -192,8 +189,7 @@
       <footer class="footer">
         <section class="footer__social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <div class="social">
-            <ul class="social__list reset-list">
+            <ul class="social reset-list">
               <li class="social__item">
                 <a class="social__link" href="https://twitter.com/htmlacademy">
                   <svg class="svg-position social__icon" width="18" height="15" viewBox="0 0 18 15" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/></svg>
@@ -210,7 +206,6 @@
                   <span class="visually-hidden">YouTube</span></a>
               </li>
             </ul>
-          </div>
         </section>
         <section class="footer__contact">
           <h2 class="visually-hidden">Контактный номер телефона</h2>
@@ -239,7 +234,7 @@
               <input class="modal__input-date field" type="text" id="date-in" name="date-in"  placeholder="Укажите дату" required>
               <button class="modal__calendar" type="button"><span class="visually-hidden">Открыть календарь</span></button>
             </div>
-            <p class="modal__comment modal__comment_date-in reset-text">Мы не можем отправить вас в прошлое.</p>
+            <p class="modal__comment modal__comment_err reset-text">Мы не можем отправить вас в прошлое.</p>
             <label class="modal__label" for="date-out">Дата выезда:</label>
             <div class="modal__date-wrap">
               <input class="modal__input-date field" type="text" id="date-out" name="date-out"  placeholder="Укажите дату" required>
@@ -252,19 +247,20 @@
               <input class="counter__input" type="number" id="adults" name="adults" value="2" required>
               <button class="counter__change counter__change_plus button" type="button"><span class="visually-hidden">увеличить значение</span></button>
             </div>
-            <span class="modal__label-wrap">
-            <label class="modal__label modal__label_children" for="children">Дети:</label>
+            <div class="modal__label-wrap">
+              <label class="modal__label modal__label_children" for="children">Дети:</label>
               <button class="modal__info" type="button">
                 <svg width="1" height="9" viewBox="0 0 1 9" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff">
                   <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
-            </span>
-             <!-- popup -->
-             <div class="popup info__popup">
-              <p class="info__text reset-text">Укажите количество детей, которые будут с вами,
-                возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+               <!-- popup -->
+              <div class="popup info__popup">
+                <p class="info__text reset-text">Укажите количество детей, которые будут с вами,
+                 возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
             </div>
+
             <div class="counter">
               <button class="counter__change counter__change_minus button" type="button"><span class="visually-hidden">уменьшить значение</span></button>
               <input class="counter__input" type="number" id="children" name="children"  value="1" required>
@@ -277,5 +273,3 @@
     </div>
   </body>
 </html>
-
-
