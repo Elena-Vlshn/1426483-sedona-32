@@ -14,7 +14,9 @@
   font-display: swap;
 }
 
-body, *, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -47,6 +49,7 @@ body {
 }
 
 /* # How to hide elements visually */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -59,6 +62,7 @@ body {
 }
 
 /* ===== RESET ===== */
+
 .reset-list {
   margin: 0;
   padding: 0;
@@ -66,6 +70,7 @@ body {
 }
 
 /* Remove margin on h1-h6 and p */
+
 .reset-text {
   margin: 0;
 }
@@ -76,39 +81,43 @@ body {
 }
 
 /* Remove outline on the forms and links */
-:active, :hover, :focus {
+
+:active,
+:hover,
+:focus {
   outline: 0;
   outline-offset: 0;
 }
 
 /* ===== BUTTON ===== */
+
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    padding: 8px;
-    border: none;
-    width: 160px;
-    min-height: 37px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #ffffff;
-    border-radius: 4px;
-    background-color: #756257;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 8px;
+  border: none;
+  width: 160px;
+  min-height: 37px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #756257;
+  cursor: pointer;
+}
 
 /* ====== FIELD ====== */
+
 .field {
   border: 3px solid transparent;
   font: inherit;
   border-radius: 10px 0px 0px 10px;
   background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .field::placeholder {
@@ -122,13 +131,16 @@ body {
 
 .field:focus {
   border-color: #83b3d3;
+  background-color: #e6e6e6;
 }
 
 .field:not(:placeholder-shown) {
   border: 2px solid #000000;
+  background-color: #ffffff;
 }
 
 /* ====== SVG ====== */
+
 .svg-position {
   position: absolute;
   top: 0;
@@ -139,12 +151,14 @@ body {
 }
 
 /* ====== IMG ====== */
+
 img {
   max-width: 100%;
   object-fit: contain;
 }
 
 /* ====== HEADER ====== */
+
 .header {
   display: flex;
   padding: 13px 72px 14px 60px;
@@ -238,13 +252,13 @@ img {
   align-items: center;
 }
 
-.navigation__user .navigation__item{
+.navigation__user .navigation__item {
   margin-right: 0;
 }
 
 .navigation__item_button {
- margin-left: 23px;
- display: flex;
+  margin-left: 23px;
+  display: flex;
 }
 
 .navigation__button {
@@ -281,6 +295,7 @@ img {
 }
 
 /* ====== MAIN ====== */
+
 .main {
   flex-grow: 1;
 }
@@ -450,6 +465,7 @@ img {
 }
 
 /* ====== ACTIVITY-BANNER ====== */
+
 .activity-banner {
   display: flex;
   flex-direction: column;
@@ -505,6 +521,7 @@ img {
 }
 
 /* ====== SUBSCRIBE ====== */
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -592,12 +609,15 @@ img {
 }
 
 /* Invalid */
+
 /* класс должен добавляться при незаполнении поля или невалидности введенного email */
 .subscribe__input_invalid {
   border: 2px solid #ff5757;
+  background-color: #ffffff;
 }
 
 /* ====== FOOTER ====== */
+
 .footer {
   background-color: #ffffff;
   display: grid;
@@ -621,7 +641,6 @@ img {
   width: 100%;
 }
 
-/* надо ли здесь прописывать свойство background_size и почему*/
 .social__link {
   background-repeat: no-repeat;
   background-position: center;
@@ -700,6 +719,7 @@ a[href^="tel:"]:active {
 }
 
 /* ====== CATALOG ====== */
+
 .wrapper{
   padding-left: 70px;
   padding-right: 72px;
@@ -836,7 +856,8 @@ a[href^="tel:"]:active {
 }
 
 /* ====== RANGE ====== */
-.range{
+
+.range {
   width: 288px;
   padding-top: 4px;
 }
@@ -856,8 +877,6 @@ a[href^="tel:"]:active {
   line-height: 23px;
   color: #ffffff;
   width: 100%;
-  display: flex;
-  align-self:center
 }
 
 .range__input_min {
@@ -869,9 +888,7 @@ a[href^="tel:"]:active {
 }
 
 .range__label {
-  display: flex;
   line-height: 23px;
-  align-self: center;
   color: rgba(225, 225, 225, 0.3);
   border: 2px solid transparent;
   border-left: none;
@@ -1149,6 +1166,7 @@ a[href^="tel:"]:active {
 }
 
 /* ====== FILTER ====== */
+
 .filter {
   display: flex;
   margin-top: 44px;
@@ -1226,8 +1244,8 @@ a[href^="tel:"]:active {
    border-color: #000000;
 }
 
-.filter__button_card{
-  background-image: url("../images/svg/sorting-card.svg")
+.filter__button_card {
+  background-image: url("../images/svg/sorting-card.svg");
 }
 
 .filter__button_slideshow {
@@ -1247,6 +1265,7 @@ a[href^="tel:"]:active {
 }
 
 /* ====== PRODUCT CARD ====== */
+
 .product {
   display: flex;
 }
@@ -1299,7 +1318,7 @@ a[href^="tel:"]:active {
   color: #000000;
 }
 
-.product__link:hover .product__name{
+.product__link:hover .product__name {
   color: #756257;
 }
 
@@ -1376,7 +1395,7 @@ a[href^="tel:"]:active {
   border: 3px solid #756257;
 }
 
-.product__button_selected:active{
+.product__button_selected:active {
   color: rgba(225, 225, 225, 0.3);
 }
 
@@ -1422,13 +1441,14 @@ a[href^="tel:"]:active {
 }
 
 /* ====== PAGINATION ====== */
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
   max-width: 450px;
 }
 
-.pagination__list :last-child {
+.pagination :last-child {
   margin-right: 0;
 }
 
@@ -1491,6 +1511,7 @@ a[href^="tel:"]:active {
 }
 
 /* ====== POPUP ====== */
+
 .popup {
   position: absolute;
   top: 48px;
@@ -1523,8 +1544,8 @@ a[href^="tel:"]:active {
   border-bottom: none;
 }
 
-.navigation__icon_selected:hover + .selected ,
-.navigation__icon_selected:focus + .selected ,
+.navigation__icon_selected:hover + .selected,
+.navigation__icon_selected:focus + .selected,
 .navigation__item:focus-within .selected,
 .selected:focus-within {
   visibility: visible;
@@ -1629,7 +1650,8 @@ a[href^="tel:"]:active {
   color: rgba(225, 225, 225, 0.3);
 }
 
-/* ======  ====== */
+/* ====== MODAL ====== */
+
 .modal {
   position: fixed;
   top: 0;
@@ -1754,6 +1776,14 @@ a[href^="tel:"]:active {
   background-color:  #e6e6e6;
 }
 
+.modal__input-date:focus + .modal__calendar {
+  background-color: #e6e6e6;
+}
+
+.modal__input-date:not(:placeholder-shown) + .modal__calendar {
+  background-color: #ffffff;
+}
+
 .modal__calendar:focus {
   border-color:  #83b3d3;
 }
@@ -1765,9 +1795,16 @@ a[href^="tel:"]:active {
   /* opacity: 0; */
 }
 
-/* изначально комментарии не должны отображаться ,
-после проверки введенной даты элементам добавляются классы .modal__comment_show и,
-при необходимости, .modal__comment_err*/
+/* изначально комментарии скрыты,
+после проверки введенных дат элементам добавляются классы:
+.modal__input-date_checked и .modal__calendar_checked - изменить цвет фона поля инпут и кнопки
+.modal__comment_show - показать комментарий,
+при необходимости, .modal__comment_err - сообщить о некорректной дате или отсутствии мест*/
+
+.modal__input-date_checked,
+.modal__calendar_checked {
+  background-color: #f2f2f2;
+}
 
 .modal__comment_err {
   color: #ff5757;
@@ -1899,6 +1936,7 @@ a[href^="tel:"]:active {
   border: none;
   text-align: center;
   line-height: 40px;
+  font-weight: 700;
 }
 
 .counter__input::-webkit-outer-spin-button,
